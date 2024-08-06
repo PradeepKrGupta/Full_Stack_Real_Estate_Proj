@@ -11,12 +11,11 @@ function Layout() {
         <Navbar />
       </div>
       <div className="content">
-        <Outlet/>
+        <Outlet />
       </div>
     </div>
   );
 }
-
 
 function RequireAuth() {
   const { currentUser } = useContext(AuthContext);

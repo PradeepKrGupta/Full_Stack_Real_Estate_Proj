@@ -29,7 +29,6 @@ function Register() {
 
       navigate("/login");
     } catch (err) {
-      console.log(err);
       setError(err.response.data.message);
     } finally {
       setIsLoading(false);
@@ -56,4 +55,3 @@ function Register() {
 }
 
 export default Register;
-
